@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    int length = strlen(str);
+    if (length >= 2 && str[0] == '0' && str[length - 1] == '1') {
+        printf("The string is accepted by the DFA.\n");
+    } else {
+        printf("The string is not accepted by the DFA.\n");
+    }
+
+    return 0;
+}
